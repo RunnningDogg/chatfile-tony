@@ -6,9 +6,9 @@ const { useToken } = theme;
 
 function NavBar() {
   return (
-    <div className=" flex w-full px-6 py-2 justify-between border-b  ">
-      <div className="logo-linjk flex gap-2 items-center">
-        <Link href="/" className="flex gap-2 items-center">
+    <div className=" flex w-full justify-between border-b px-6 py-2  ">
+      <div className="logo-linjk flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
             alt="logo"
@@ -17,14 +17,14 @@ function NavBar() {
           />
           <p className="ml-3 text-xl font-bold">ChatFiles</p>
         </Link>
-        <div className="ml-10 links flex gap-2">
+        <div className="links ml-10 flex gap-2">
           <Link href="/login" className="hover:text-geek-400">
             Login
           </Link>
         </div>
       </div>
 
-      <div className="profile flex gap-3 items-center">
+      <div className="profile flex items-center gap-3">
         <Avatar size="large">Tony</Avatar>
       </div>
     </div>

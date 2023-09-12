@@ -11,6 +11,7 @@ function NavBar() {
   const links = [
     { name: "文档集市", href: "/docs" },
     { name: "上传文档", href: "/upload" },
+    { name: "文档对话", href: "/chat" },
   ];
   const pathname = usePathname();
 
@@ -20,9 +21,9 @@ function NavBar() {
   // console.log(data);
 
   return (
-    <div className=" flex w-full px-6 py-2 justify-between border-b  ">
-      <div className="logo-linjk flex gap-2 items-center">
-        <Link href="/" className="flex gap-2 items-center">
+    <div className=" flex w-full justify-between border-b px-6 py-2  ">
+      <div className="logo-linjk flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
             alt="logo"
@@ -31,7 +32,7 @@ function NavBar() {
           />
           <p className="ml-3 text-xl font-bold">ChatFiles</p>
         </Link>
-        <div className="ml-10 links flex gap-4">
+        <div className="links ml-10 flex gap-4">
           {links.map((link, index) => {
             const isActive = pathname === link.href;
             return (
@@ -49,7 +50,7 @@ function NavBar() {
         </div>
       </div>
 
-      <div className="profile flex gap-3 items-center">
+      <div className="profile flex items-center gap-3">
         {/* <Avatar size="large">Tony</Avatar> */}
         {!data?.user ? (
           <Button type="primary" href="/api/auth/signin">
