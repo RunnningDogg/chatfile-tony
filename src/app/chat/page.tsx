@@ -37,7 +37,7 @@ function Page() {
             placeholder="input your question"
             className="w-full flex-1 px-2 py-4"
           />
-          <button className="absolute bottom-4 right-3 rounded border bg-geek-500 px-4  py-2  text-slate-50 hover:bg-geek-600">
+          <button className="absolute  right-5 top-1/2 -translate-y-1/2  rounded border bg-geek-500 px-4  py-2  text-slate-50 hover:bg-geek-600">
             Send
           </button>
         </div>

@@ -4,7 +4,7 @@ import FileTable from "./components/FileTable";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-screen flex-col">
+    <main className=" flex min-h-screen w-screen flex-col">
       <NavBar />
       <section className="flex flex-col px-4 py-2">
         <h1 className="mt-24 text-center text-3xl font-bold">
@@ -23,6 +23,10 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <FileTable />
         </div>
+
+        <form>
+          <input className="input" placeholder="hi" />
+        </form>
       </section>
     </main>
   );
